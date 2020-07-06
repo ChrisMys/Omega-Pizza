@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omega Pizza</title>
+    <link href = "index.css" rel = "stylesheet" type = "text/css">
+</head>
+<body>
+    <header>
+        <img src = "Images/logo.png" alt = "mytestimage">
+        <h1>Omega Pizza</h1>
+        <h2>Welcome to Omega's Online Ordering</h2>
+    </header>
+    <main>
+        <h3>Please follow the directions below for optimal results.</h3>
+        <form action = "index.html" method = "GET">
+
+        <!-- Customize your preferences section -->
+        <fieldset id = "options">
+        <legend> Customize your Omega </legend>
+
+            <!-- Radio Buttons for selecting Pizza Size -->
+            <div>
+                <p>Pizza Size</p>
+                <input id = "small" type = "radio" name = "pizzaSize" value = "on">
+                <label for = "small"> Small Pizza (10") </label>
+                <input id = "medium" type = "radio" name = "pizzaSize" value = "on">
+                <label for = "medium"> Medium Pizza (12") </label>
+                <input id = "large" type = "radio" name = "pizzaSize" value = "on">
+                <label for = "large"> Large Pizza (16") </label>
+                <input id = "extra" type = "radio" name = "pizzaSize" value = "on">
+                <label for = "extra"> Extra Large (18") </label>
+                <input id = "party" type = "radio" name = "pizzaSize" value = "on">
+                <label for = "party"> Omega Size (24") </label>
+            </div>
+
+            <!-- Radio Buttons for selecting Pizza Base -->
+            <div>
+                <p>Pizza Base</p>
+                <input id = "white" type = "radio" name = "crust" value = "on">
+                <label for = "white"> White </label>
+                <input id = "multi" type = "radio" name = "crust" value = "on">
+                <label for = "multi"> Multigrain </label>
+                <input id = "ancient" type = "radio" name = "crust" value = "on">
+                <label for = "ancient"> Ancient Grain (+ $1) </label>
+                <input id = "gluten" type = "radio" name = "crust" value = "on">
+                <label for = "gluten"> Gluten Free (+ $2) </label>
+            </div>
+
+            <!-- Radio Buttons for selecting Pizza Thickness, also a drop down for selecting if its well done -->
+            <div>
+                <p>Pizza Thickness</p>
+                <input id = "plain" type = "radio" name = "thickness" value = "on">
+                <label for = "plain"> Regular Crust </label>
+                <input id = "thin" type = "radio" name = "thickness" value = "on">
+                <label for = "thin"> Thin Crust </label>
+                <input id = "thick" type = "radio" name = "thickness" value = "on">
+                <label for = "thick"> Thick Crust </label>
+                <br>
+                <br>
+                <label for = "crust"> Well Done </label>
+                <select id = "crust" name = "wellDone">
+                    <option value = "no"> No </option>
+                    <option value = "Yes"> Yes </option>
+                </select>          
+            </div>
+
+            <!-- Radio Buttons for selecting Pizza Sauce, also a drop down for selecting the amount of sauce-->
+            <div>
+                <p>Pizza Sauce</p>
+                <input id = "mari" type = "radio" name = "sauce" value = "on">
+                <label for = "mari"> Marinara Sauce </label>
+                <input id = "garlic" type = "radio" name = "sauce" value = "on">
+                <label for = "garlic"> Garlic Butter </label>
+                <input id = "pesto" type = "radio" name = "sauce" value = "on">
+                <label for = "pesto"> Pesto Sauce </label>
+                <input id = "caesar" type = "radio" name = "sauce" value = "on">
+                <label for = "caesar"> Creamy Caesar (+ $1) </label>
+                <input id = "buttChick" type = "radio" name = "sauce" value = "on">
+                <label for = "buttChick"> Butter Chicken (+ $1) </label>
+                <br>
+                <br>
+                <label for = "sauce"> Amount of Sauce </label>
+                <select id = "sauce" name = "amount">
+                    <option value = "normal"> Regular Amount </option>
+                    <option value = "easy"> Go Easy on the Sauce </option>
+                    <option value = "more"> Double the Sauce </option>
+                </select>     
+            </div>
+
+            <!-- Radio Buttons for selecting Pizza Cheese, also a drop down for selecting the amount of cheese -->
+            <div>
+                <p>Pizza Cheese</p>
+                <input id = "mozza" type = "radio" name = "cheese" value = "on">
+                <label for = "mozza"> Mozzarella Cheese </label>
+                <input id = "cheddar" type = "radio" name = "cheese" value = "on">
+                <label for = "cheddar"> Cheddar Cheese </label>
+                <input id = "marble" type = "radio" name = "cheese" value = "on">
+                <label for = "marble"> Marble Cheese </label>
+                <input id = "spicy" type = "radio" name = "cheese" value = "on">
+                <label for = "spicy"> Habenero Monterey Jack (+ $1) </label>
+                <br>
+                <br>
+                <label for = "cheese"> Amount of Cheese </label>
+                <select id = "cheese" name = "amount">
+                    <option value = "normal"> Regular Amount </option>
+                    <option value = "easy"> Go Easy on the Cheese </option>
+                    <option value = "more"> Double the Cheese </option>
+                </select>         
+            </div>
+        </fieldset> <br>
+
+        <!-- Choose your Proteins section -->
+        <fieldset id = "meat">
+            <legend>Choose your Proteins ( $1 each ) </legend>
+
+            <!-- Checkbox buttons for selecting Proteins on the pizza, also with a drop down for specifying location -->
+            <div>
+                <input id = "pep" type = "checkbox" name = "protein" value = "on">
+                <label for = "pep"> Pepperoni </label>
+                <select>
+                    <option value = "none"> None </option>
+                    <option value = "whole"> Whole Pizza </option>
+                    <option value = "left"> Left Side Only </option>
+                    <option value = "right"> Right Side Only </option>
+                </select>
+                <input id = "bacon" type = "checkbox" name = "protein" value = "on">
+                <label for = "bacon"> Bacon </label>
+                <select>
+                    <option value = "none"> None </option>
+                    <option value = "whole"> Whole Pizza </option>
+                    <option value = "left"> Left Side Only </option>
+                    <option value = "right"> Right Side Only </option>
+                </select>
+                <input id = "saus" type = "checkbox" name = "protein" value = "on">
+                <label for = "saus"> Sausage </label>
+                <select>
+                    <option value = "none"> None </option>
+                    <option value = "whole"> Whole Pizza </option>
+                    <option value = "left"> Left Side Only </option>
+                    <option value = "right"> Right Side Only </option>
+                </select>
+                <input id = "ham" type = "checkbox" name = "protein" value = "on">
+                <label for = "ham"> Ham </label>
+                <select>
+                    <option value = "none"> None </option>
+                    <option value = "whole"> Whole Pizza </option>
+                    <option value = "left"> Left Side Only </option>
+                    <option value = "right"> Right Side Only </option>
+                </select>
+                <br>
+                <br>
+                <input id = "chick" type = "checkbox" name = "protein" value = "on">
+                <label for = "chick"> Chicken </label>
+                <select>
+                    <option value = "none"> None </option>
+                    <option value = "whole"> Whole Pizza </option>
+                    <option value = "left"> Left Side Only </option>
+                    <option value = "right"> Right Side Only </option>
+                </select>
+                <input id = "steak" type = "checkbox" name = "protein" value = "on">
+                <label for = "steak"> Steak </label>
+                <select>
+                    <option value = "none"> None </option>
+                    <option value = "whole"> Whole Pizza </option>
+                    <option value = "left"> Left Side Only </option>
+                    <option value = "right"> Right Side Only </option>
+                </select>
+                <input id = "beef" type = "checkbox" name = "protein" value = "on">
+                <label for = "beef"> Ground Beef </label>
+                <select>
+                    <option value = "none"> None </option>
+                    <option value = "whole"> Whole Pizza </option>
+                    <option value = "left"> Left Side Only </option>
+                    <option value = "right"> Right Side Only </option>
+                </select>
+                <input id = "anch" type = "checkbox" name = "protein" value = "on">
+                <label for = "anch"> Anchovies </label>
+                <select>
+                    <option value = "none"> None </option>
+                    <option value = "whole"> Whole Pizza </option>
+                    <option value = "left"> Left Side Only </option>
+                    <option value = "right"> Right Side Only </option>
+                </select>
+            </div>
+        </fieldset> <br>
+
+        <!-- Choose your Vegetables section -->
+        <fieldset id = "veggies">
+            <legend> Pick your Vegetables ( $0.50 each ) </legend>
+
+            <!-- Checkbox buttons for selecting Vegetables on the pizza, also with a drop down for specifying location-->
+            <div>
+                <input id = "mush" type = "checkbox" name = "vegetable" value = "on">
+                <label for = "mush"> Mushrooms </label>
+                <select>
+                    <option value = "none"> None </option>
+                    <option value = "whole"> Whole Pizza </option>
+                    <option value = "left"> Left Side Only </option>
+                    <option value = "right"> Right Side Only </option>
+                </select>
+                <input id = "gpeps" type = "checkbox" name = "vegetable" value = "on">
+                <label for = "gpeps"> Green Peppers </label>
+                <select>
+                    <option value = "none"> None </option>
+                    <option value = "whole"> Whole Pizza </option>
+                    <option value = "left"> Left Side Only </option>
+                    <option value = "right"> Right Side Only </option>
+                </select>
+                <input id = "toms" type = "checkbox" name = "vegetable" value = "on">
+                <label for = "toms"> Tomatoes </label>
+                <select>
+                    <option value = "none"> None </option>
+                    <option value = "whole"> Whole Pizza </option>
+                    <option value = "left"> Left Side Only </option>
+                    <option value = "right"> Right Side Only </option>
+                </select>
+                <input id = "ronions" type = "checkbox" name = "vegetable" value = "on">
+                <label for = "ronions"> Red Onions </label>
+                <select>
+                    <option value = "none"> None </option>
+                    <option value = "whole"> Whole Pizza </option>
+                    <option value = "left"> Left Side Only </option>
+                    <option value = "right"> Right Side Only </option>
+                </select>
+                <br>
+                <br>
+                <input id = "golives" type = "checkbox" name = "vegetable" value = "on">
+                <label for = "golives"> Green Olives </label>
+                <select>
+                    <option value = "none"> None </option>
+                    <option value = "whole"> Whole Pizza </option>
+                    <option value = "left"> Left Side Only </option>
+                    <option value = "right"> Right Side Only </option>
+                </select>
+                <input id = "bolives" type = "checkbox" name = "vegetable" value = "on">
+                <label for = "bolives"> Black Olives </label>
+                <select>
+                    <option value = "none"> None </option>
+                    <option value = "whole"> Whole Pizza </option>
+                    <option value = "left"> Left Side Only </option>
+                    <option value = "right"> Right Side Only </option>
+                </select>
+                <input id = "pine" type = "checkbox" name = "vegetable" value = "on">
+                <label for = "pine"> Pineapple </label>
+                <select>
+                    <option value = "none"> None </option>
+                    <option value = "whole"> Whole Pizza </option>
+                    <option value = "left"> Left Side Only </option>
+                    <option value = "right"> Right Side Only </option>
+                </select>
+                <input id = "bana" type = "checkbox" name = "vegetable" value = "on">
+                <label for = "bana"> Banana Peppers </label>
+                <select>
+                    <option value = "none"> None </option>
+                    <option value = "whole"> Whole Pizza </option>
+                    <option value = "left"> Left Side Only </option>
+                    <option value = "right"> Right Side Only </option>
+                </select>
+                <br>
+                <br>
+                <input id = "jala" type = "checkbox" name = "vegetable" value = "on">
+                <label for = "jala"> Jalapenos </label>
+                <select>
+                    <option value = "none"> None </option>
+                    <option value = "whole"> Whole Pizza </option>
+                    <option value = "left"> Left Side Only </option>
+                    <option value = "right"> Right Side Only </option>
+                </select>
+                <input id = "spin" type = "checkbox" name = "vegetable" value = "on">
+                <label for = "spin"> Spinach </label>
+                <select>
+                    <option value = "none"> None </option>
+                    <option value = "whole"> Whole Pizza </option>
+                    <option value = "left"> Left Side Only </option>
+                    <option value = "right"> Right Side Only </option>
+                </select>
+                <input id = "broc" type = "checkbox" name = "vegetable" value = "on">
+                <label for = "broc"> Broccoli </label>
+                <select>
+                    <option value = "none"> None </option>
+                    <option value = "whole"> Whole Pizza </option>
+                    <option value = "left"> Left Side Only </option>
+                    <option value = "right"> Right Side Only </option>
+                </select>
+                <input id = "sun" type = "checkbox" name = "vegetable" value = "on">
+                <label for = "sun"> Sun Dried Tomatoes </label>
+                <select>
+                    <option value = "none"> None </option>
+                    <option value = "whole"> Whole Pizza </option>
+                    <option value = "left"> Left Side Only </option>
+                    <option value = "right"> Right Side Only </option>
+                </select>
+                <br>
+                <br>
+                <input id = "basil" type = "checkbox" name = "vegetable" value = "on">
+                <label for = "basil"> Basil </label>
+                <select>
+                    <option value = "none"> None </option>
+                    <option value = "whole"> Whole Pizza </option>
+                    <option value = "left"> Left Side Only </option>
+                    <option value = "right"> Right Side Only </option>
+                </select>
+                <input id = "art" type = "checkbox" name = "vegetable" value = "on">
+                <label for = "art"> Artichokes </label>
+                <select>
+                    <option value = "none"> None </option>
+                    <option value = "whole"> Whole Pizza </option>
+                    <option value = "left"> Left Side Only </option>
+                    <option value = "right"> Right Side Only </option>
+                </select>
+                <input id = "cactus" type = "checkbox" name = "vegetable" value = "on">
+                <label for = "cactus"> Spicy Cactus Cut Potatoes </label>
+                <select>
+                    <option value = "none"> None </option>
+                    <option value = "whole"> Whole Pizza </option>
+                    <option value = "left"> Left Side Only </option>
+                    <option value = "right"> Right Side Only </option>
+                </select>
+            </div>
+        </fieldset> <br>
+
+        <!-- Specify Pickup or Delivery -->
+        <fieldset id = "pickupOrDelivery">
+            <legend> Pickup or Delivery </legend>
+                
+            <!-- Radio Buttons for selecting pickup options -->
+            <div>
+                <input id = "pick" type = "radio" name = "pickupOrDelivery" value = "on">
+                <label for = "pick"> Pickup </label>
+                <input id = "del" type = "radio" name = "pickupOrDelivery" value = "on">
+                <label for = "del"> Delivery (+ $3.50) </label>
+            </div>
+        </fieldset> <br>
+
+        <!-- Customer Information -->
+        <fieldset id = "customerInformation">
+            <legend> Order Information </legend>
+
+            <!-- Text Input boxes for all the customers information -->
+            <div>
+                <label for = "fname"> Enter your First Name </label> <br>
+                <input id = "fname" type = "text" name = "fname" placeholder = "John" required = "" maxlength = "50"> <br>
+                <br>
+                <label for = "lname"> Enter your Last Name </label> <br>
+                <input id = "lname" type = "text" name = "lname" placeholder = "Doe" required = "" maxlength = "50"> <br>
+                <br>
+                <label for = "phone"> Enter your Phone Number </label> <br>
+                <input id = "phone" type = "text" name = "phone" placeholder = "5555555555" required = "" maxlength = "50"> <br>
+                <br>
+                <label for = "add"> Enter your Street Address </label> <br>
+                <input id = "add" type = "text" name = "add" placeholder = "123 Fake Street" maxlength = "50"> <br>
+                <br>
+                <label for = "apt"> Enter your Apartment or Suite (if applicable) </label> <br>
+                <input id = "apt" type = "text" name = "apt" placeholder = "Apt 000" maxlength = "50"> <br>
+                <br>
+                <label for = "city"> Enter your City </label> <br>
+                <input id = "city" type = "text" name = "city" placeholder = "Barrie" maxlength = "50"> <br>
+                <p>Enter your Province</p>
+                <select>
+                    <option value = "alb"> Alberta </option>
+                    <option value = "bc"> British Columbia </option>
+                    <option value = "ont"> Ontario </option>
+                    <option value = "man"> Manitoba </option>
+                    <option value = "newB"> New Brunswick </option>
+                    <option value = "newf"> Newfoundland </option>
+                    <option value = "nor"> Northwest Territories </option>
+                    <option value = "nov"> Nova Scotia </option>
+                    <option value = "nun"> Nunavut </option>
+                    <option value = "pei"> Prince Edward Island </option>
+                    <option value = "que"> Quebec </option>
+                    <option value = "sas"> Saskatchewan </option>
+                    <option value = "yuk"> Yukon Territory </option>
+                </select>
+                <br>
+                <br>
+                <label for = "post"> Enter your Postal Code </label> <br>
+                <input id = "post" type = "text" name = "post" placeholder = "L3L3L3" maxlength = "6"> <br>
+            </div>
+
+            <!-- Radio Buttons for selecting payment method -->
+            <div>
+                <p>Payment Method</p>
+                <input id = "cash" type = "radio" name = "payment" value = "on">
+                <label for = "cash"> Cash </label>
+                <input id = "credDeb" type = "radio" name = "payment" value = "on">
+                <label for = "credDeb"> Credit/Debit </label>
+                <input id = "paypal" type = "radio" name = "payment" value = "on">
+                <label for = "paypal"> PayPal </label>
+                <input id = "cheque" type = "radio" name = "payment" value = "on">
+                <label for = "cheque"> Cashier's Cheque </label> <br>
+            </div>
+        </fieldset>
+
+        <!-- Button to Place the Order -->
+        <input type = "submit" value = "Place Order">
+
+        <!-- Button to Reset all the Fields -->
+        <input type = "reset" value = "Reset Fields">
+    </form>
+    </main>
+    <footer>
+        <p>
+            <small> We are pleased you chose us to dine with Omega Pizza, and we hope you enjoy your meal! </small>
+        </p>
+    </footer>
+</body>
+</html>
